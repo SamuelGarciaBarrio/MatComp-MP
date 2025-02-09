@@ -64,4 +64,9 @@ public class Circle { // Save as "Circle.java"
         this.color = color;
 
     }
+
+    public String toString() {
+        return "Circle[radius=" + radius + " color=" + color + "]";
+    }
+
 }

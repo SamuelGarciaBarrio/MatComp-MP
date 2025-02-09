@@ -3,7 +3,7 @@ package es.uah.matcomp.mp.el1.eja.e1;
 /**
  * A Test Driver for the Circle class
  */
-public class TestCircle { // Save as "es.uah.matcomp.mp.li.eja.e1.es.uah.matcomp.mp.el1.eja.e1.TestCircle.java"
+public class TestCircle { // Save as "es.uah.matcomp.mp.el1.eja.e1.TestCircle.java"
     public static void main(String[] args) {
 // Declare an instance of Circle class called c1.
 // Construct the instance c1 by invoking the "default" constructor
@@ -34,5 +34,9 @@ public class TestCircle { // Save as "es.uah.matcomp.mp.li.eja.e1.es.uah.matcomp
         System.out.println("color is: " + c4.getColor()); // Print color via getter
 // You cannot do the following because setRadius() returns void, which cannot be printed
         // System.out.println(c4.setRadius(4.4));
+        Circle c5 = new Circle(5.5);
+        System.out.println(c5.toString()); // explicit call
+        System.out.println(c5); // println() calls toString() implicitly, same as above
+        System.out.println("Operator '+' invokes toString() too: " + c5); // '+' invokes toString() too
     }
 }

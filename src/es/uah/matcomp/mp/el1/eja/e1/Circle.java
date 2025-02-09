@@ -19,20 +19,19 @@ public class Circle { // Save as "Circle.java"
 
     }
 
-
+    // Instance variable
     /** Constructs a Circle instance with the given radius and default color */
-    public Circle(double r) { // 2nd constructor
-        radius = r;
-
+    public Circle(double radius) {
+        this.radius = radius; // "this.radius" refers to the instance variable
+// "radius" refers to the method's parameter
         color = "red";
-
     }
 
     // 3rd constructor to construct a new instance of Circle with the given radius and color
-    public Circle (double r, String c) {
-        radius = r;
+    public Circle (double radius, String color) {
+        this.radius = radius;
 
-        color = c;
+        this.color = color;
     }
 
 
@@ -54,13 +53,15 @@ public class Circle { // Save as "Circle.java"
 
     }
 
-    // Setter for instance variable radius
-    public void setRadius(double newRadius) {
-        radius = newRadius;
+    /** Sets the radius to the given value */
+    public void setRadius(double radius) {
+        this.radius = radius; // "this.radius" refers to the instance variable
+    // "radius" refers to the method's argument
     }
+
     // Setter for instance variable color
-    public void setColor(String newColor) {
-        color = newColor;
+    public void setColor(String color) {
+        this.color = color;
 
     }
 }

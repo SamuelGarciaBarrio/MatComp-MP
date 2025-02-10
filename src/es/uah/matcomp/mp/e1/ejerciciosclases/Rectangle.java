@@ -6,13 +6,13 @@ public class Rectangle {
 
     // Constructors (overloaded)
     /** Constructs a Rectangle instance with default value for length and width */
-    public Rectangle() { // 1st (default) constructor
+    public Rectangle() {
         length = 1.0f;
         width = 1.0f;
     }
 
     /** Constructs a Rectangle instance with the given length and width */
-    public Rectangle(float length, float width) { // 1st (default) constructor
+    public Rectangle(float length, float width) {
         this.length = length;
         this.width = width;
     }

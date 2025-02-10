@@ -4,12 +4,12 @@ public class Circle {
     private double radius;
 
     // Constructors (overloaded)
-    /** Constructs a Circle instance with default value for radius and color */
+    /** Constructs a Circle instance with default value for radius */
     public Circle() { // 1st (default) constructor
         radius = 1.0;
     }
 
-    /** Constructs a Circle instance with the given radius and default color */
+    /** Constructs a Circle instance with the given radius */
     public Circle(double radius) {
         this.radius = radius;
     }
@@ -21,8 +21,7 @@ public class Circle {
 
     /** Sets the radius to the given value */
     public void setRadius(double radius) {
-        this.radius = radius; // "this.radius" refers to the instance variable
-        // "radius" refers to the method's argument
+        this.radius = radius;
     }
 
     /** Returns the area of this Circle instance */

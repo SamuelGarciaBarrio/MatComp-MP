@@ -7,7 +7,7 @@ public class Ball {
     private float xDelta;
     private float yDelta;
 
-    public Ball(float x, float y,int radius, float xDelta, float yDelta) ´{
+    public Ball(float x, float y,int radius, float xDelta, float yDelta) {
         this.x=x;
         this.y=y;
         this.radius=radius;
@@ -27,11 +27,11 @@ public class Ball {
         return radius;
     }
 
-    public float getxDelta() {
+    public float getXDelta() {
         return xDelta;
     }
 
-    public float getyDelta() {
+    public float getYDelta() {
         return yDelta;
     }
 
@@ -47,12 +47,28 @@ public class Ball {
         this.radius = radius;
     }
 
-    public void setxDelta(float xDelta) {
+    public void setXDelta(float xDelta) {
         this.xDelta = xDelta;
     }
 
-    public void setyDelta(float yDelta) {
+    public void setYDelta(float yDelta) {
         this.yDelta = yDelta;
     }
 
+    public void move(){
+        this.x += xDelta;
+        this.y += yDelta;
+    }
+
+    public void reflectHorizontal(){
+        this.xDelta = -xDelta;
+    }
+
+    public void reflectVertical(){
+        this.yDelta = -yDelta;
+    }
+
+    public String toString() {
+        return "Ball[(" + x + "," + y + "), speed=(" + xDelta + "," + yDelta + ")]";
+    }
 }

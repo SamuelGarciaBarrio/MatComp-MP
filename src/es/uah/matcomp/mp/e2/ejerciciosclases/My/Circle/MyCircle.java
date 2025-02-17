@@ -17,7 +17,7 @@ public class MyCircle {
     }
 
     public MyCircle(MyPoint center,int radius){
-        this.center=new MyPoint(0,0);
+        this.center=center;
         this.radius=radius;
     }
 
@@ -30,7 +30,7 @@ public class MyCircle {
     }
 
     public MyPoint getCenter() {
-        return center;
+        return this.center;
     }
 
     public void setCenter(MyPoint center) {

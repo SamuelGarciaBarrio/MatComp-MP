@@ -10,5 +10,17 @@ public class TestMyCircle {
         MyCircle c2 = new MyCircle(c,10); //Test constructor by center and radius
         System.out.println(c0); //Test toString
         c0.setCenterX(1); //Test setters
+        c0.setCenterY(2);
+        c0.setRadius(15);
+        c2.setCenterXY(3,3);
+        c1.setCenter(c);
+        int[] center = c2.getCenterXY(); //Test getters
+        System.out.println(center[0]+", "+center[1]);
+        System.out.println(c0.getCenterX());
+        System.out.println(c0.getCenterY());
+        System.out.println(c1.getCenter());
+        System.out.println(c2.getArea()); //Test getArea
+        System.out.println(c2.getCircumference()); //Test getCircumference
+        System.out.println(c0.distance(c1)); //Test distance
     }
 }

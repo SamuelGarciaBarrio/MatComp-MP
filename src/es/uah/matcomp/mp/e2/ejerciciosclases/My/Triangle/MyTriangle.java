@@ -28,7 +28,7 @@ public class MyTriangle {
     }
 
     public String getType(){
-        String Type = new String("");
+        String Type;
         if (v1.distance(v2)==v2.distance(v3) && v1.distance(v2)==v3.distance(v1)){
             Type = "Equilatero";
         }else {

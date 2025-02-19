@@ -26,7 +26,9 @@ class MyTriangleTest {
         MyPoint v3 = new MyPoint(0,4);
         MyTriangle t1 = new MyTriangle(v1,v2,v3);
         MyTriangle t2 = new MyTriangle(0,0,1,0,0,1);
+        MyTriangle t3 = new MyTriangle(0,0,0,0,0,0);
         assertEquals("Escaleno",t1.getType(),"Deberia ser Escaleno");
         assertEquals("Isosceles",t2.getType(),"Deberia ser Isosceles");
+        assertEquals("Equilatero",t3.getType(),"Deberia ser Equilatero");
     }
 }
